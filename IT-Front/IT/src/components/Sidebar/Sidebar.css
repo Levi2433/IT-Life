@@ -1,0 +1,184 @@
+.rsb {
+  width: 240px;
+  min-height: 100vh;
+  flex-shrink: 0;
+  padding: 16px 12px;
+  background: #0b1018;
+  color: #cfd3da;
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
+
+.rsb-collapsed {
+  width: 72px;
+}
+
+/* Tepa qism: logo va yig'ish tugmasi */
+.rsb-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  padding: 0 4px;
+  margin-bottom: 20px;
+}
+
+.rsb-logo {
+  height: 22px;
+  filter: brightness(0) invert(1); /* qora fonda oq ko'rinishi uchun */
+}
+
+.rsb-collapsed .rsb-logo {
+  display: none;
+}
+
+.rsb-collapsed .rsb-top {
+  justify-content: center;
+}
+
+.rsb-collapse {
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border: none;
+  border-radius: 8px;
+  background: #1a1f29;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.rsb-collapse:hover {
+  background: #252b37;
+}
+
+/* Panel yorlig'i */
+.rsb-panel {
+  display: inline-block;
+  margin: 0 4px 16px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: #1a1f29;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+}
+
+.rsb-collapsed .rsb-panel {
+  display: none;
+}
+
+/* Menyu */
+.rsb-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.rsb-item {
+  width: 100%;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 12px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: #cfd3da;
+  font-size: 12px;
+  font-family: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.rsb-item svg {
+  flex-shrink: 0;
+}
+
+.rsb-item:hover {
+  background: #151a23;
+  color: #fff;
+}
+
+.rsb-item.rsb-active {
+  background: #1c212b;
+  color: #fff;
+}
+
+.rsb-text {
+  flex: 1;
+  text-align: left;
+  transition: opacity 0.2s;
+}
+
+.rsb-collapsed .rsb-text,
+.rsb-collapsed .rsb-arrow {
+  display: none;
+}
+
+.rsb-collapsed .rsb-item {
+  justify-content: center;
+  padding: 0;
+}
+
+/* Dropdown strelka */
+.rsb-arrow {
+  margin-left: auto;
+  transition: transform 0.3s ease;
+}
+
+.rsb-open .rsb-arrow {
+  transform: rotate(180deg);
+}
+
+/* Dropdown animatsiyasi: balandlik 0 dan o'z o'lchamigacha silliq ochiladi */
+.rsb-sub {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition: grid-template-rows 0.3s ease, opacity 0.3s ease;
+}
+
+.rsb-sub-open {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+
+.rsb-sub-inner {
+  min-height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-top: 4px;
+}
+
+.rsb-subitem {
+  height: 36px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px 0 40px;
+  border-radius: 8px;
+  color: #cfd3da;
+  font-size: 12px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+
+.rsb-subitem:hover {
+  background: #151a23;
+  color: #fff;
+  transform: translateX(2px);
+}
+
+.rsb-subitem.rsb-active {
+  background: #1c212b;
+  color: #fff;
+}

@@ -1,0 +1,145 @@
+.teacher-inner {
+  display: flex;
+  min-height: 100vh;
+}
+
+.teacher-inner-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eff8ff;
+}
+
+.teacher-inner-left img {
+  max-width: 80%;
+  height: auto;
+}
+
+.teacher-inner-right {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.teacher-logo {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  width: 90px;
+}
+
+.teacher-form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.teacher-title {
+  margin-bottom: 12px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.teacher-label {
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.teacher-input {
+  width: 100%;
+  box-sizing: border-box;
+  height: 42px;
+  padding: 0 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.teacher-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.teacher-password {
+  position: relative;
+}
+
+.teacher-eye {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  display: flex;
+  border: none;
+  background: transparent;
+  color: #6b7280;
+  cursor: pointer;
+}
+
+.teacher-error {
+  font-size: 12px;
+  color: #ef4444;
+}
+
+.teacher-success {
+  padding: 10px;
+  border-radius: 8px;
+  background: #ecfdf5;
+  color: #047857;
+  font-size: 13px;
+  text-align: center;
+}
+
+.teacher-success a {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.teacher-btn {
+  height: 44px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 999px;
+  background: #3b82f6;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.teacher-btn:hover {
+  background: #2563eb;
+}
+
+.teacher-text {
+  text-align: center;
+  font-size: 12px;
+  color: #4b5563;
+}
+
+.teacher-text a {
+  color: #3b82f6;
+  font-weight: 600;
+}
+.teacher-forgot {
+  align-self: flex-end;
+  font-size: 12px;
+  font-weight: 600;
+  color: #3b82f6;
+}
+@media (max-width: 900px) {
+  .teacher-inner-left {
+    display: none;
+  }
+}

@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+.container {
+    width: 100%;
+    max-width: 1180px;
+    height: 105px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+#kurslar {
+  scroll-margin-top: 90px;
+}

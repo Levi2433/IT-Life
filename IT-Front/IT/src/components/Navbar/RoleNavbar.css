@@ -1,0 +1,175 @@
+.rnav {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  background: #f0f1f3;
+}
+
+.rnav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #0b1018;
+}
+
+.rnav-title {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.rnav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Bell va Settings tugmalari */
+.rnav-btn {
+  position: relative;
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border: none;
+  border-radius: 8px;
+  background: #fff;
+  color: #0b1018;
+  cursor: pointer;
+}
+
+.rnav-btn:hover {
+  background: #f7f7f8;
+}
+
+.rnav-badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  min-width: 14px;
+  height: 14px;
+  padding: 0 3px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: #ef4444;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+/* Til tanlash */
+.rnav-lang {
+  position: relative;
+}
+
+.rnav-lang select {
+  height: 34px;
+  min-width: 118px;
+  padding: 0 30px 0 12px;
+  border: none;
+  border-radius: 8px;
+  background: #fff;
+  color: #0b1018;
+  font-size: 11px;
+  font-weight: 500;
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.rnav-lang-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #0b1018;
+}
+
+/* Profil */
+.rnav-profile-wrap {
+  position: relative;
+}
+
+.rnav-profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 34px;
+  padding: 0 10px 0 4px;
+  border: none;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.rnav-avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.rnav-avatar-initial {
+  display: grid;
+  place-items: center;
+  background: #0b1018;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.rnav-profile-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.15;
+  min-width: 90px;
+}
+
+.rnav-name {
+  font-size: 10px;
+  font-weight: 700;
+  color: #0b1018;
+}
+
+.rnav-role {
+  font-size: 8px;
+  color: #6b7280;
+}
+
+.rnav-chevron {
+  color: #6b7280;
+}
+
+/* Chiqish menyusi */
+.rnav-menu {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 6px);
+  min-width: 140px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  z-index: 20;
+}
+
+.rnav-menu button {
+  width: 100%;
+  padding: 10px 14px;
+  border: none;
+  background: none;
+  text-align: left;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.rnav-menu button:hover {
+  background: #f3f4f6;
+}

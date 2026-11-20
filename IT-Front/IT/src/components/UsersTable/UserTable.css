@@ -1,0 +1,275 @@
+.ut {
+  font-size: 11px;
+  color: #0b1018;
+}
+
+.ut-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 12px;
+}
+
+.ut-head h2 {
+  margin: 0 0 6px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.ut-crumb {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  font-size: 11px;
+}
+
+.ut-crumb i {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #8b8f97;
+}
+
+.ut-add {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 38px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 8px;
+  background: #3b82f6;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.ut-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 0;
+}
+
+.ut-info {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.ut-xls {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: none;
+  background: none;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.ut-pager {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ut-per {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-right: 14px;
+}
+
+.ut-per select {
+  border: none;
+  background: transparent;
+  appearance: none;
+  font-size: 11px;
+  font-weight: 500;
+  padding-right: 4px;
+  outline: none;
+  cursor: pointer;
+}
+
+.ut-page {
+  min-width: 28px;
+  height: 28px;
+  padding: 0 8px;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.ut-page-active {
+  background: #fff;
+  font-weight: 600;
+}
+
+.ut-next {
+  background: #fff;
+  padding: 0 14px;
+}
+
+.ut-next:disabled {
+  color: #b5b9c0;
+  cursor: default;
+}
+
+.ut-dots {
+  padding: 0 4px;
+}
+
+.ut-search {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.ut-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 360px;
+  height: 38px;
+  padding: 0 12px;
+  border-radius: 8px;
+  background: #fff;
+  color: #8b8f97;
+}
+
+.ut-input input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 12px;
+}
+
+.ut-search > button {
+  height: 38px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 8px;
+  background: #3b82f6;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.ut-wrap {
+  overflow-x: auto;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.ut-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ut-table th {
+  height: 40px;
+  padding: 0 14px;
+  background: #f7f8fa;
+  text-align: left;
+  font-size: 10px;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.ut-table th span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.ut-table th svg {
+  color: #8b8f97;
+}
+
+.ut-table th:last-child {
+  cursor: default;
+}
+
+.ut-table th + th,
+.ut-table td + td {
+  border-left: 1px solid #eceef1;
+}
+
+.ut-table td {
+  height: 44px;
+  padding: 0 14px;
+  border-top: 1px solid #eceef1;
+  font-size: 11px;
+}
+
+.ut-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ut-user img,
+.ut-user span {
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.ut-user span {
+  display: grid;
+  place-items: center;
+  background: #0b1018;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.ut-badge {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 12px;
+  background: #e3f6ec;
+  color: #15803d;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.ut-off {
+  background: #fde8e8;
+  color: #b91c1c;
+}
+
+.ut-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.ut-actions button {
+  width: 26px;
+  height: 26px;
+  display: grid;
+  place-items: center;
+  border: none;
+  border-radius: 50%;
+  background: #f0f1f3;
+  color: #0b1018;
+  cursor: pointer;
+}
+
+.ut-empty {
+  padding: 28px;
+  text-align: center;
+  color: #8b8f97;
+}

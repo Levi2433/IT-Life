@@ -1,0 +1,88 @@
+.main {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    height: 660px;
+}
+.main-inner {
+    display: flex;
+    align-items: center;
+
+}
+.main-title {
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 72px;
+    letter-spacing: 0%;
+    margin-bottom: 30px;
+}
+
+/* --- Yangi qismlar --- */
+
+.main {
+    background:
+        radial-gradient(circle at 0% 0%, rgba(99, 102, 241, 0.10), transparent 45%),
+        radial-gradient(circle at 100% 100%, rgba(251, 146, 60, 0.12), transparent 45%);
+}
+
+.main-inner-left {
+    flex: 1;
+    max-width: 560px;
+}
+
+.main-gradient {
+    background: linear-gradient(90deg, #7c3aed 0%, #ec4899 50%, #ef4444 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.main-subtitle {
+
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #374151;
+}
+
+.main-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 32px;
+    border-radius: 999px;
+    background: #3b82f6;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(59, 130, 246, 0.30);
+    transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.main-button:hover {
+    background: #2563eb;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(59, 130, 246, 0.40);
+}
+
+.main-button:active {
+    transform: translateY(0);
+}
+
+.main-inner-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-inner-right .img {
+    max-width: 100%;
+    height: auto;
+    animation: mainFloat 5s ease-in-out infinite;
+}
+
+@keyframes mainFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+}

@@ -1,0 +1,78 @@
+.title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Inter Bold/48 Display lg;
+}
+.subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: Inter Medium/20 Text xl; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #636C79;
+    margin-top: 32px;   
+}
+.comments {
+    margin-top: 60px;
+    margin-bottom: 66px;
+}
+.comments,
+.container,
+.comments-inner {
+    height: auto;
+    min-height: 0;
+    overflow: visible;
+}
+.comments-card {
+    width: 405px;
+    border-radius: 10px;
+    border: 1px solid #E0E3E6;
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-bottom: 32px;
+    padding-right: 18px;
+    margin-top: 60px;
+    transition: 0.2s ease;
+    transform: scale(1);
+}
+.comments-text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    font-family: Poppins;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    
+}
+.comments-card:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease;
+    cursor: pointer;
+
+}
+.comments-subtitle {
+    font-family: Poppins;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 700;
+}
+.comments-texts {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 100%;
+}
+.comments-inner {
+    display: flex;
+    align-items: center;
+    gap: 43px;
+  
+}

@@ -1,0 +1,139 @@
+.pay-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(15, 23, 42, 0.55);
+}
+
+.pay-modal {
+  width: 100%;
+  max-width: 440px;
+  padding: 36px 32px;
+  border-radius: 20px;
+  background: #ffffff;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.25);
+}
+
+.pay-title {
+  margin: 0 0 10px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #1e2340;
+}
+
+.pay-text {
+  margin: 0 0 24px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #6b7280;
+}
+
+.pay-result .pay-text {
+  margin-bottom: 20px;
+}
+
+/* Telefon qatori */
+.pay-row {
+  display: flex;
+  gap: 10px;
+}
+
+.pay-input {
+  flex: 1;
+  min-width: 0;
+  padding: 14px 16px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  outline: none;
+  background: #ececf0;
+  font-family: inherit;
+  font-size: 14px;
+  color: #1e2340;
+  transition: border-color 0.2s;
+}
+
+.pay-input:focus {
+  border-color: #3b82f6;
+}
+
+.pay-input-full {
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+/* Tugmalar */
+.pay-arrow,
+.pay-btn {
+  border: none;
+  border-radius: 12px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.pay-arrow:disabled,
+.pay-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.pay-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 50px;
+  background: #2f6bff;
+}
+
+.pay-arrow:hover {
+  background: #1d56e0;
+}
+
+.pay-btn {
+  width: 100%;
+  margin-top: 6px;
+  padding: 14px;
+  background: #3b82f6;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.pay-btn:hover {
+  background: #2563eb;
+}
+
+.pay-error {
+  margin: 10px 0 0;
+  font-size: 13px;
+  color: #ef4444;
+  text-align: left;
+}
+
+/* Natija belgisi */
+.pay-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 14px;
+  border-radius: 50%;
+  color: #ffffff;
+}
+
+.pay-icon-ok {
+  background: #22c55e;
+}
+
+.pay-icon-err {
+  background: #ef4444;
+}

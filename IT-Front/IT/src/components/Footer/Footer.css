@@ -1,0 +1,110 @@
+
+.footer-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 48px;
+    margin-bottom: 20px;
+}
+.footer {
+    margin-top: 89px;
+}
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-title {
+    line-height: 38px;
+    color: Colors/Text/text-primary (900);
+    font-weight: 600;
+    font-size: 36px;
+}
+.footer-subtitle{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0%;
+    color: #475467;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 48px;
+    gap: 22px;
+}
+
+.buttons-1 {
+    width: 148px;
+    height: 48px;
+    border-radius: 6px;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    gap: 10px;
+    color: #667085;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s ease;
+
+}
+.buttons-1:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease;
+}
+.buttons-2 {
+    width: 119px;
+    height: 48px;
+    border: none;
+    background-color: #3B81F4;
+    color: #ffff;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.buttons-2:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease;
+}
+.footer-down {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #EAECF0;
+    padding: 28px 0 20px;
+    margin-top: 64px;
+}
+
+.footer-copyright {
+    color: #667085;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer-links a {
+    color: #667085;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-decoration: none;
+}

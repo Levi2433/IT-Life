@@ -1,0 +1,140 @@
+
+.titles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.titles-title {
+  color: #1C232C;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+.titles-subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0 60px;
+  color: #636C79;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.img-cards {
+  margin-top: 70px;
+}
+
+.img-track {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.img-track::-webkit-scrollbar {
+  display: none;
+}
+
+.img-card {
+  position: relative;
+  flex-shrink: 0;
+  width: 340px;
+  height: 440px;
+  overflow: hidden;
+  border-radius: 4px;
+  background: #e5e7eb;
+  scroll-snap-align: start;
+}
+
+.img-card-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.img-card:hover .img-card-photo {
+  transform: scale(1.05);
+}
+
+.img-card-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.img-card-letter {
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.img-card-fullname {
+  padding: 0 16px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.img-blue {
+  color: #3b82f6;
+}
+
+.img-red {
+  color: #ef4444;
+}
+
+.img-card-info {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 48px 12px 12px;
+  color: #fff;
+  background: linear-gradient(transparent, #000);
+  opacity: 0;
+  transform: translateY(12px);
+  transition: 0.3s ease;
+}
+
+.img-card:hover .img-card-info {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.img-card-name {
+  margin: 0 0 2px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.img-card-role {
+  margin: 0 0 10px;
+  font-size: 11px;
+  opacity: 0.8;
+}
+
+.img-card-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.img-card-icons svg {
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.img-card-icons svg:hover {
+  color: #3b82f6;
+  transform: translateY(-2px);
+}

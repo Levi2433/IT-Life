@@ -1,0 +1,161 @@
+.contact {
+  background: #f6f6f6;
+  padding: 60px 0 80px;
+  font-family: "Inter", sans-serif;
+  color: #1e2340;
+}
+
+.contact .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.contact__label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #3b82f6;
+  margin-bottom: 8px;
+}
+
+.contact__title {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0 0 32px;
+}
+
+/* Cards */
+.contact__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.contact__card {
+  background: #fff;
+  padding: 20px;
+}
+
+.contact__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: #3b82f6;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.contact__card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+
+.contact__card p {
+  font-size: 13px;
+  color: #4b5563;
+  margin: 0;
+}
+
+/* Form */
+.contact__form-box {
+  background: #fff;
+  padding: 50px 20px 70px;
+  text-align: center;
+}
+
+.contact__form-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0 0 40px;
+}
+
+.contact__form {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact__form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.contact__form input,
+.contact__form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 13px;
+  font-family: inherit;
+  color: #1e2340;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.contact__form input:focus,
+.contact__form textarea:focus {
+  border-color: #3b82f6;
+}
+
+.contact__form textarea {
+  height: 110px;
+  resize: none;
+}
+
+.contact__phone {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding-left: 14px;
+}
+
+.contact__phone:focus-within {
+  border-color: #3b82f6;
+}
+
+.contact__country {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+}
+
+.contact__phone input {
+  border: none;
+  padding-left: 6px;
+}
+
+.contact__form button {
+  margin-top: 4px;
+  padding: 12px;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: inherit;
+  color: #fff;
+  background: #3b82f6;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.contact__form button:hover {
+  background: #2563eb;
+}
+

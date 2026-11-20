@@ -1,0 +1,43 @@
+.al-title {
+  margin: 8px 0 4px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.al-sub {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 12px;
+  font-size: 9px;
+}
+
+.al-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #8b8f97;
+}
+
+.al-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.al-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 14px;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.al-card strong {
+  font-size: 18px;
+}
+
+.al-card span {
+  font-size: 11px;
+}
